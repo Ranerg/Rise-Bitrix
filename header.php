@@ -9,8 +9,28 @@
 	<?$APPLICATION->ShowPanel();?>
 	<div id="content">
 		<div id="logo">
-			<p>equality,liberty,democracy</p>
-			<h1>logo or slogan</h1>
+			<p>
+				<?$APPLICATION->IncludeComponent(
+					"bitrix:main.include",
+					"",
+					Array(
+						"AREA_FILE_SHOW" => "file",
+						"PATH" => "/inc/description.php",
+					),
+				false
+				);?>
+			</p>
+			<h1>
+				<?$APPLICATION->IncludeComponent(
+					"bitrix:main.include",
+					"",
+					Array(
+						"AREA_FILE_SHOW" => "file",
+						"PATH" => "/inc/title.php",
+					),
+				false
+				);?>
+			</h1>
 		</div>
 		<ul id="menu">
 			<li><a class="current" href="#">Home</a></li>

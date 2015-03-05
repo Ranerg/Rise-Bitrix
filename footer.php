@@ -23,9 +23,15 @@
 		
 		<div id="footer">
 			<div id="fl">
-				<p>&copy; Copyright 2007 Internet Studio<br />
-				Design: <a href="http://gendesigns.blogspot.com/">Gen</a> &middot; Sponsored by <a href="http://gendesigns.com/">Gen</a> &middot;</p>
-			<div style="display:none;"><a href="http://free-templates.ru">áåñïëàòíûå øàáëîíû</a></div>
+				<?$APPLICATION->IncludeComponent(
+					"bitrix:main.include",
+					"",
+					Array(
+						"AREA_FILE_SHOW" => "file",
+						"PATH" => "/inc/footer.php",
+					),
+				false
+				);?>
 			</div>
 		</div>
 	</div>
