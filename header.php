@@ -6,6 +6,7 @@
 	<title>Studio 5</title>
 </head>
 <body>
+	<?$APPLICATION->ShowPanel();?>
 	<div id="content">
 		<div id="logo">
 			<p>equality,liberty,democracy</p>
